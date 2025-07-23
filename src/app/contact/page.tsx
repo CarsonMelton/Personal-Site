@@ -13,7 +13,7 @@ export default function ContactPage() {
           <Mail className="mx-auto w-12 h-12 text-purple-400 mb-4" />
           <h1 className="text-5xl font-bold text-white mb-6">Get In Touch</h1>
           <p className="text-gray-300 text-lg mb-12">
-            Feel free to reach out if you'd like to collaborate, have questions, or just want to connect.
+            Feel free to reach out if you&apos;d like to collaborate, have questions, or just want to connect.
           </p>
 
           <div className="space-y-6 text-gray-300">
