@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+
 import {
   Award,
   Cpu,
@@ -136,12 +138,12 @@ export default function ResumePage() {
 
         {/* Back to Home Button */}
         <div className="mt-16 text-center">
-          <a
+          <Link
             href="/"
             className="px-6 py-3 bg-[#F0EAD6] text-[#121212] rounded-md text-lg hover:bg-gray-300 transition"
           >
             Back to Home
-          </a>
+          </Link>
         </div>
       </main>
     </div>

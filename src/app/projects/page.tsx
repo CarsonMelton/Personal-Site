@@ -1,5 +1,7 @@
 import React from "react";
 import { Code } from "lucide-react";
+import Link from "next/link";
+
 
 import Navbar from "@/components/Navbar";
 
@@ -44,12 +46,12 @@ export default function ProjectsPage() {
 
           {/* Back to Home Button */}
           <div className="mt-16">
-            <a
+            <Link
               href="/"
               className="px-6 py-3 bg-[#F0EAD6] text-[#121212] rounded-md text-lg hover:bg-gray-300 transition"
             >
               Back to Home
-            </a>
+            </Link>
           </div>
         </div>
       </section>
