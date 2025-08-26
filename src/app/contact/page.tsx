@@ -1,5 +1,7 @@
 import React from "react";
 import { Mail, Github, Linkedin } from "lucide-react";
+import Link from "next/link";
+
 
 import Navbar from "@/components/Navbar";
 
@@ -34,12 +36,12 @@ export default function ContactPage() {
 
         {/* Back to Home Button */}
         <div>
-          <a
+          <Link
             href="/"
             className="px-6 py-3 bg-[#F0EAD6] text-[#121212] rounded-md text-lg hover:bg-gray-300 transition"
           >
             Back to Home
-          </a>
+          </Link>
         </div>
       </div>
     </div>
