@@ -12,10 +12,10 @@ export default function Card({ href, icon, title, description }: CardProps) {
   return (
     <Link
       href={href}
-      className="group bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-purple-500 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+      className="group bg-[#1a1a1a] rounded-xl p-6 border border-gray-700 hover:border-[#F0EAD6] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
     >
-      <div className="text-purple-400 mb-4">{icon}</div>
-      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+      <div className="text-[#F0EAD6] mb-4">{icon}</div>
+      <h3 className="text-xl font-bold text-[#F0EAD6] mb-3 group-hover:text-[#F0EAD6]/80 transition-colors">
         {title}
       </h3>
       <p className="text-gray-400 text-sm">{description}</p>

@@ -1,9 +1,9 @@
 import React from "react";
-import { Code } from "lucide-react";
+import { Cpu, Shield, Code } from "lucide-react";
 import Link from "next/link";
 
-
 import Navbar from "@/components/Navbar";
+import Card from "@/components/Card";
 
 export default function ProjectsPage() {
   return (
@@ -13,35 +13,26 @@ export default function ProjectsPage() {
 
       {/* Projects Section */}
       <section className="flex-grow flex flex-col justify-start px-6 pt-32 pb-16">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-6xl md:text-7xl font-bold mb-16 tracking-tight">
             Projects
           </h1>
 
-          <div className="space-y-16 text-left text-xl md:text-2xl leading-relaxed">
-            {/* LiDAR Project */}
-            <div>
-              <h2 className="text-3xl font-semibold mb-2">LiDAR Phantom Point Simulation</h2>
-              <p className="text-gray-400 italic mb-4">Capstone Project – Spring 2025</p>
-              <ul className="list-disc list-inside space-y-2 text-gray-300">
-                <li>Developed a simulation environment using CARLA 0.10.0 and Unreal Engine 5 for autonomous vehicle scenarios.</li>
-                <li>Processed LiDAR point cloud data to implement object detection and adaptive braking methods.</li>
-                <li>Introduced probabilistic phantom point generation affecting LiDAR sensor accuracy and safety measures.</li>
-                <li>Visualized raw LiDAR data using Open3D and Numpy for sensor accuracy evaluation.</li>
-              </ul>
-            </div>
+          {/* Card Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card
+              href="/projects/lidar"
+              icon={<Cpu className="w-10 h-10" />}
+              title="LiDAR Phantom Point Simulation"
+              description="Capstone project simulating autonomous vehicle scenarios in CARLA and Unreal Engine, with LiDAR phantom point generation and Open3D visualization."
+            />
 
-            {/* AI Phishing Project */}
-            <div>
-              <h2 className="text-3xl font-semibold mb-2">AI-Generated Phishing Email Detection</h2>
-              <p className="text-gray-400 italic mb-4">Advanced Computer and Network Security – Spring 2025</p>
-              <ul className="list-disc list-inside space-y-2 text-gray-300">
-                <li>Generated phishing and legitimate datasets using OpenAI and Anthropic APIs with varied prompts.</li>
-                <li>Developed preprocessing and vectorization methods to enhance machine learning inputs.</li>
-                <li>Trained models (naïve Bayes, logistic regression, random forest) using sklearn and pandas.</li>
-                <li>Measured model accuracy with custom test datasets for performance evaluation.</li>
-              </ul>
-            </div>
+            <Card
+              href="/projects/phishing-detection"
+              icon={<Shield className="w-10 h-10" />}
+              title="AI-Generated Phishing Detection"
+              description="Built ML models to detect AI-generated phishing emails using datasets from OpenAI/Anthropic, with preprocessing and sklearn training."
+            />
           </div>
 
           {/* Back to Home Button */}
