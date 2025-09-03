@@ -1,5 +1,5 @@
 import React from "react";
-import { Cpu, Shield, Code } from "lucide-react";
+import { Cpu, Shield, Code, Anchor } from "lucide-react";
 import Link from "next/link";
 
 import Navbar from "@/components/Navbar";
@@ -32,6 +32,13 @@ export default function ProjectsPage() {
               icon={<Shield className="w-10 h-10" />}
               title="AI-Generated Phishing Detection"
               description="Built ML models to detect AI-generated phishing emails using datasets from OpenAI/Anthropic, with preprocessing and sklearn training."
+            />
+
+            <Card
+              href="/projects/docker-pipeline"
+              icon={<Anchor className="w-10 h-10" />}
+              title="Secure Docker CI/CD Pipeline"
+              description="Used GitHub Actions to create a CI/CD pipeline for vulnerability scanning of Docker containers"
             />
           </div>
 
